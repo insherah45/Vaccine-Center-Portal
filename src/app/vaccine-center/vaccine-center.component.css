@@ -1,0 +1,16 @@
+.card ul {
+    list-style: none;
+}
+.cardbody{
+    font-size: 13px;
+
+}
+.form-control{
+    width:15rem;
+}
+.colorfont{
+    color:#fff;
+    background-color:#003d75 ;
+}
+/*
+dont forget media query*/

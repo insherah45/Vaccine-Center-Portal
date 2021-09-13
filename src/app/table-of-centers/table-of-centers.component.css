@@ -1,0 +1,15 @@
+.fa-trash-alt{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-wrench{
+    font-size: 20px;
+    cursor: pointer; 
+}
+
+.colorfont{
+    color:#fff;
+    background-color:#003d75 ;
+    width:10rem;
+}

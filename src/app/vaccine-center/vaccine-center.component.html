@@ -1,0 +1,52 @@
+
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+      <div class="dropdown">
+        <button class="btn colorfont dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Find by Vaccine Type
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <app-vaccines></app-vaccines> 
+        </div>
+      </div>
+     </div>
+<div class="col-md-6">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search Name Center" aria-label="Search" [(ngModel)]='searchTerm'>
+  
+        </form>
+      </div>
+  
+   
+      <div class="col-md-12 mb-5"></div>
+    
+    <div class="col-md-5 col-lg-3 mr-3 mb-3 col-sm-12" *ngFor="let vaccineCenter of vaccineCenter | centerFilter : searchTerm ">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body pl-3">
+        
+          <h5 class="card-title text-center">Vaccine Center</h5>
+      
+   <ul>
+     <li><strong>Center Name:</strong> <span>{{vaccineCenter.name}}</span> </li>
+<li> <strong>Vaccine Type : </strong> <span>{{vaccineCenter.vaccineType}}</span></li>
+<li> <strong>Location :</strong><span>{{ vaccineCenter.location}}  </span> </li>
+<li> <strong>Distnace To My Location :</strong> <span>{{vaccineCenter. distnaceToMyLoc}}</span> </li>
+<li><strong> Area : </strong> <span>{{vaccineCenter.area}}</span></li>
+<li><strong>Working Time :</strong><span>{{vaccineCenter.workingTime}} </span>  </li>
+<li><strong> scheduledAppointment :</strong> <span>{{vaccineCenter.scheduledAppointment}}</span> </li>
+<li><strong> 1st Dose :</strong> <span>{{vaccineCenter.doseone}}</span> </li>
+<li><strong> 2th Dose:</strong>  <span>{{vaccineCenter.dosetwo}}</span> </li>
+   </ul>
+
+          <a href="#" class="card-link" routerLink="/reversation">Reservation</a> 
+
+          <a href="#" class="card-link">Map</a>
+        </div>
+     
+      </div>
+    </div>
+   
+  </div>
+  </div>
+ 

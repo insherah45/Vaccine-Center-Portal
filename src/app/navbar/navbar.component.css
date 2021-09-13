@@ -1,0 +1,19 @@
+.bg-color{
+    color:#ffff;
+ background-color:#003d75 ;
+
+}
+.colorfont{
+    color:#003d75;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:#003d75;
+    font-size: 18px;
+    font-weight: 500;
+  
+}
+.navbar-light .navbar-nav .nav-link:hover{
+ color:#ffff;
+ background-color:#003c75a2 ;
+
+}

@@ -1,0 +1,12 @@
+.btn-outline-info{
+    color:#003d75;
+    border-color:#003d75;;
+}
+.btn-outline-info:hover{
+    background-color:#003d75;
+    color:#fff;
+}
+.card{
+    box-shadow: 5px 5px 5px 5px rgba(214, 210, 210, 0.404);
+
+}

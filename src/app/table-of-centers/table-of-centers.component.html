@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 ">
+            <form class="form-group col-md-4 mb-3">
+             
+                <button type="submit" class="btn colorfont" value="Add" routerLink="/Addform">Add</button>
+               
+            </form>
+            
+        </div>
+        <div class="col-md-6 ">
+          <form class="form-group col-md-3 mb-3">   
+              <button type="submit" class="btn colorfont" (click)="logout()"><i class="fas fa-sign-out-alt"></i>LogOut</button>
+          </form>
+          
+      </div>
+       
+        <div class="col-md-12">
+            <table class="table table-striped" *ngFor="let vaccineCenter of vaccineCenter">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Center Name</th>
+                      <th scope="col">Vaccine Type</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Distnace</th>
+                      <th scope="col">Area</th>
+                      <th scope="col">scheduledAppointment</th>
+                      <th scope="col">1st Dose</th>
+                      <th scope="col">2th Dose</th>
+                      <th scope="col">2th Dose</th>
+                      <th scope="col">Update</th>
+                      <th scope="col">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>{{vaccineCenter.name}}</td>
+                      <td>{{vaccineCenter.vaccineType}}</td>
+                      <td>{{ vaccineCenter.location}}</td>
+                      <td>{{vaccineCenter. distnaceToMyLoc}}</td>
+                      <td>{{vaccineCenter.area}}</td>
+                      <td>{{vaccineCenter.workingTime}}</td>
+                      <td>{{vaccineCenter.scheduledAppointment}}</td>
+                      <td>{{vaccineCenter.doseone}}</td>
+                      <td>{{vaccineCenter.dosetwo}}</td>
+                      <td><i class="fas fa-wrench"></i></td>
+                      <td><i class="fas fa-trash-alt"></i></td>
+
+                    </tr>
+                    </tbody>
+              </table>
+        </div>
+    </div>
+</div>
